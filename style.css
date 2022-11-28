@@ -89,9 +89,17 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 2rem;
   background-color: var(--clr-primary-400);
   color: var(--clr-neutral-100);
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   text-transform: uppercase;
   position: relative;
+  /* font-weight: var(--fw-bold); */
+  font-size: 12px;
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .1rem;
+  
 }
 
 .button:is(:hover) {
@@ -100,17 +108,11 @@ p, h1, h2, h3, h4, h5, h6 {
   color: var(--clr-primary-400);
 }
 
-input:is(:hover) {
-  cursor: pointer;
-  background-color: var(--clr-primary-400);
-  color: var(--clr-neutral-100);
-}
-
 .form-control {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -132,6 +134,8 @@ body {
 }
 
 article {
+  max-width: 21rem;
+  max-height: fit-content;
   background-color: var(--clr-neutral-700);
   border-radius: 1rem;
   padding: 1.5rem;
@@ -139,10 +143,16 @@ article {
   gap: 1rem;
 }
 
+/* Please rate us section */
+
 .rating__img {
-  
+  border-radius: 50%;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
   width: fit-content;
   margin: -0.3rem;
+  background-color: var(--clr-neutral-500);
+  opacity: 90%;
 }
 
 
@@ -155,10 +165,10 @@ article {
   color: var(--clr-neutral-100);
 }
 
+
 .custom-radio-btn {
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 3px solid white;
+  width: 2.8rem;
+  height: 2.8rem;
   border-radius: 50%;
   /* margin-left: 25p; */
   display: flex;
@@ -166,25 +176,35 @@ article {
   align-items: center;
 }
 
-input[type="radio"] {
-  min-width: 2rem;
-  min-height: 2rem;
+.custom-radio-btn > input {
   display: none;
-  
 }
-
-input:checked + .checkmark {
-  background-color: green;
-}
-
-
 
 .checkmark {
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
-  display: inline-block;
+  padding-top: 3px;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
   cursor: pointer;
+  background-color: var(--clr-neutral-500);
+  opacity: 90%;
 }
+
+/* Rating hover and check effects */
+
+.checkmark:hover {
+  background-color: var(--clr-primary-400);
+  color:var(--clr-neutral-100);
+}
+
+.checked {
+  background-color: var(--clr-neutral-200);
+  color: var(--clr-neutral-100) !important;
+}
+
+/* Rating Complete Section */
 
 
 .thanks {
@@ -204,9 +224,17 @@ input:checked + .checkmark {
 
 .thanks__rating {
     margin: auto;
-    padding: 0.25rem 0.85rem;
+    min-width: 12.5rem;
+    padding-top: .2rem;
+    min-height: 2rem;
     color: var(--clr-primary-400);
     font-size: 1.1rem;
+    background-color: var(--clr-neutral-500);
+    opacity: 80%;
+    border-radius: 2rem;
+
+    display: grid;
+    place-content: center;
 }
 
 .thanks__header {

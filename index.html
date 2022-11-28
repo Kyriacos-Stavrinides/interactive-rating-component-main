@@ -33,46 +33,46 @@
         </p>
         <form class="form-control">
           <label class="custom-radio-btn" for="1" >
-            <input class="rating__number" type="radio" name="radio" value={1}>
+            <input type="radio" name="radio" value={1}>
             </input>
-            <span class="checkmark">1</span>
+            <span class="checkmark" value="1">1</span>
           </label>
           <label class="custom-radio-btn" for="2" >
-            <input class="rating__number" type="radio" name="radio" value={2}>
+            <input type="radio" name="radio" value={2}>
             </input>
-            <span class="checkmark">2</span>
+            <span class="checkmark" value="2">2</span>
           </label>
           <label class="custom-radio-btn" for="3" >
-            <input class="rating__number" type="radio" name="radio" value={3}>
+            <input type="radio" name="radio" value={3}>
             </input>
-            <span class="checkmark">3</span>
+            <span class="checkmark" value="3">3</span>
           </label>
           <label class="custom-radio-btn" for="4" >
-            <input class="rating__number" type="radio" name="radio" value={4}>
+            <input type="radio" name="radio" value={4}>
             </input>
-            <span class="checkmark">4</span>
+            <span class="checkmark" value="4">4</span>
           </label>
           <label class="custom-radio-btn" for="5" >
-            <input class="rating__number" type="radio" name="radio" value={5}>
+            <input type="radio" name="radio" value={5}>
             </input>
-            <span class="checkmark">5</span>
+            <span class="checkmark" value="5">5</span>
           </label>
         </form>
         <button class="button">Submit</button>
       </div>
       <!-- Rating state end -->
     </article>
-    <article class="thanks">
+    <article class="thanks visually-hidden">
       <picture class="thanks__img">
         <img src="images/illustration-thank-you.svg" alt="Thank you illustration">
       </picture>
       <!-- Thank you state start -->
       <div class="thanks__content">
-        <p class="thanks__rating bg-tint bg-circular">You selected <!-- Add rating here --> out of 5</p>
+        <p class="thanks__rating"></p>
         <h1 class="thanks__header">Thank you!</h1>
         <p class="thanks__text">
           We appreciate you taking the time to give a rating. If you ever need more support,
-          don’t hesitate to get in touch!
+          don't hesitate to get in touch!
         </p>
       </div>
       <!-- Thank you state end -->
@@ -80,7 +80,7 @@
     
   </main>
 
-  
+  <script src="app.js"></script>
   
 </body>
 </html>
