@@ -31,13 +31,33 @@
           Please let us know how we did with your support request. All feedback is appreciated
           to help us improve our offering!
         </p>
-        <div class="flex-group">
-          <p class="rating__number bg-tint bg-circular" id="2-star">1</p>
-          <p class="rating__number bg-tint bg-circular" id="3-star">2</p>
-          <p class="rating__number bg-tint bg-circular" id="4-star">3</p>
-          <p class="rating__number bg-tint bg-circular" id="1-star">4</p>
-          <p class="rating__number bg-tint bg-circular" id="5-star">5</p>
-        </div>
+        <form class="form-control">
+          <label class="custom-radio-btn" for="1" >
+            <input class="rating__number" type="radio" name="radio" value={1}>
+            </input>
+            <span class="checkmark">1</span>
+          </label>
+          <label class="custom-radio-btn" for="2" >
+            <input class="rating__number" type="radio" name="radio" value={2}>
+            </input>
+            <span class="checkmark">2</span>
+          </label>
+          <label class="custom-radio-btn" for="3" >
+            <input class="rating__number" type="radio" name="radio" value={3}>
+            </input>
+            <span class="checkmark">3</span>
+          </label>
+          <label class="custom-radio-btn" for="4" >
+            <input class="rating__number" type="radio" name="radio" value={4}>
+            </input>
+            <span class="checkmark">4</span>
+          </label>
+          <label class="custom-radio-btn" for="5" >
+            <input class="rating__number" type="radio" name="radio" value={5}>
+            </input>
+            <span class="checkmark">5</span>
+          </label>
+        </form>
         <button class="button">Submit</button>
       </div>
       <!-- Rating state end -->
