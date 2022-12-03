@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/interactive-elements-using-css-an-js-RlNJTD2lkj)
-- Live Site URL: [Add live site URL here](https://interactive-rating-component-main-8qk3a4oq7.vercel.app/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/interactive-elements-using-css-an-js-RlNJTD2lkj)
+- Live Site URL: [Github pages](https://kyriacos-stavrinides.github.io/interactive-rating-component-main/)
 
 ## My process
 
