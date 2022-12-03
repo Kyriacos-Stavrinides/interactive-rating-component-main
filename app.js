@@ -23,7 +23,7 @@ ratings.forEach(element => {
     element.addEventListener('click', () => {
         classRemover();
         element.classList.add('checked');
-        rating = element.getAttribute('value');
+        rating = element.innerText;
     });
 });
 
